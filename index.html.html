@@ -1,0 +1,678 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dr. vithalrao vikhe patil foundations institute of Business Mangement &Rural Development College</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+/* HEADER */
+.header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:#002147;
+    color:white;
+    padding:10px 30px;
+}
+
+.header img{
+    height:60px;
+}
+
+.header button{
+    padding:8px 15px;
+    border:none;
+    border-radius:8px;
+    background:#ff6b00;
+    color:white;
+    cursor:pointer;
+}
+
+/* NAVBAR */
+nav{
+    background:#003366;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    justify-content:center;
+}
+
+nav ul li{
+    position:relative;
+}
+
+nav ul li a{
+    display:block;
+    padding:14px 20px;
+    color:white;
+    text-decoration:none;
+}
+
+nav ul li:hover{
+    background:#00509e;
+}
+
+/* DROPDOWN */
+nav ul li ul{
+    position:absolute;
+    top:50px;
+    left:0;
+    background:#003366;
+    display:none;
+}
+
+nav ul li:hover ul{
+    display:block;
+}
+
+nav ul li ul li{
+    width:180px;
+}
+
+/* HERO */
+.hero{
+    height:400px;
+    background:url("https://images.unsplash.com/photo-1562774053-701939374585") center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero h1{
+    background:rgba(0,0,0,0.6);
+    color:white;
+    padding:15px 25px;
+    border-radius:10px;
+}
+
+/* NOTICE */
+.notice{
+    background:#ffcc00;
+    padding:10px;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* SECTION */
+.section{
+    padding:40px;
+    text-align:center;
+}
+
+/* CARDS */
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:250px;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:10px;
+}
+
+/* FOOTER */
+footer{
+    background:#002147;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <img src="https://media.collegedekho.com/media/img/institute/logo/College_Symbol.png">
+    <h2>Dr. vithalrao vikhe patil foundations institute of Business Mangement &Rural Development </h2>
+    <img src="https://www.vimscopt.edu.in/wp-content/uploads/2023/06/Logo-Dr.Vithalrao-Vikhe-Patil-Foundation-1024x773.jpg">
+    <button>Login</button>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sidebar Menu</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Menu Icon */
+.menu-icon {
+    position: fixed;
+    left: 15px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-icon span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: black;
+    margin: 6px 0;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+
+/* Animate into X */
+.menu-icon.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-icon.active span:nth-child(2) {
+    opacity: 0;
+}
+.menu-icon.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: -220px;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background: rgb(240, 236, 236);
+    padding-top: 60px;
+    transition: 0.4s;
+}
+
+.sidebar a {
+    display: block;
+    color: rgb(43, 39, 39);
+    padding: 15px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #9b3b3b;
+}
+
+/* Open Sidebar */
+.sidebar.active {
+    left: 0;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Menu Icon -->
+<div class="menu-icon" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+    <SPAN></SPAN>
+</div>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+    <a href="#">Home</a>
+    <a href="#">COURSES</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</div>
+
+
+<h1 style="text-align:center; margin-top:10px;"></h1>
+
+<script>
+function toggleMenu() {
+    document.querySelector(".menu-icon").classList.toggle("active");
+    document.getElementById("sidebar").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
+    
+
+</div>
+
+
+<!-- NAVBAR -->
+<nav>
+<ul>
+<b>
+<li><a href="#">Home</a></li>
+<li>
+<a href="#">About</a>
+<ul>
+<li><a href="#">Vision</a></li>
+<li><a href="#">Mission</a></li>
+</b>
+</ul>
+</li>
+<b>
+<li>
+<a href="#">Courses</a>
+</b>
+<ul>
+<li><a href="#">MBA</a></li>
+<li><a href="#">MCA</a></li>
+<li><a href="#">BBA</a></li>
+<li><a href="#">BCA</a></li>
+<li><a href="#">PHD</a></li>
+</ul>
+</li>
+</div>
+<b>
+<li><a href="#">Admissions</a></li>
+</b>
+<b>
+<li><a href="#">Contact</a></li>
+</b>
+</ul>
+</nav>
+
+<!-- NOTICE -->
+<b>
+<div class="notice">
+<marquee behavior="scroll"direction="left">
+    Admissions Open 2026-27 | Apply Now
+MBA & MCA & BBA & BCA
+</b>
+</marquee>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Welcome to IBMRD</h1>
+</div>
+
+<!-- COURSES -->
+<div class="section">
+    <h2>Our Programs</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/011/163/533/small/mba-master-of-business-administration-investment-in-education-and-management-strategy-e-learning-online-study-personal-growth-and-career-development-concept-in-wireframe-hand-illustration-vector.jpg">
+            <h3>MBA</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://www.srivenkateswara.in/images/new/4.png">
+            <h3>MCA</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://www.iiamedu.com/assets/img/courses/BBA.jpeg">
+            <h3>BBA</h3>
+        </div>
+<div class="card">
+<img src ="https://iimtu.edu.in/blog/wp-content/uploads/2023/04/BCA-3.jpg">
+<h3>BCA</h3>
+</div>
+
+    </div>
+</div>
+<!-- BCA DETAILS SECTION -->
+<div class="section" id="bca">
+    <h2>Bachelor of Computer Applications (BCA)</h2>
+
+    <p>
+        BCA is a 3-year undergraduate program focused on computer applications,
+        software development, and IT fundamentals.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>📚 Duration</h3>
+            <p>3 Years (6 Semesters)</p>
+        </div>
+
+        <div class="card">
+            <h3>🎯 Eligibility</h3>
+            <p>12th Pass (Any Stream with minimum marks)</p>
+        </div>
+
+        <div class="card">
+            <h3>💻 Subjects</h3>
+            <p>Programming, DBMS, Web Development, Networking</p>
+        </div>
+
+        <div class="card">
+            <h3>💼 Career</h3>
+            <p>Software Developer, Web Developer, Data Analyst</p>
+        </div>
+
+    </div>
+
+    <br>
+<b>
+    <button onclick="alert('Application Form Coming Soon')">
+        Apply for BCA
+</b>
+</button>
+<!-- BBA DETAILS SECTION -->
+<div class="section" id="BBA">
+    <h2>Bachelor of Business Administration (BBA)</h2>
+
+    <p>
+        BBA is a 3-year undergraduate Course focused on business mangement and entreprenurship
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>📚 Duration</h3>
+            <p>3 Years (6 Semesters)</p>
+        </div>
+
+        <div class="card">
+            <h3>🎯 Eligibility</h3>
+            <p>12th Pass (Any Stream with minimum marks)</p>
+        </div>
+
+        <div class="card">
+            <h3> Subjects</h3>
+            <p>marketing, hr,finance</p>
+        </div>
+
+        <div class="card">
+            <h3>💼 Career</h3>
+            <p>manger,entrepreneur</p>
+        </div>
+
+    </div>
+
+    <br>
+<B>
+    <button onclick="alert('Application Form Coming Soon')">
+        Apply for BBA
+</B>
+    </button>
+<!-- MBA DETAILS SECTION -->
+<div class="section" id="MBA">
+    <h2>Master of business administration(MBA)</h2>
+
+    <p>
+        MBA is a 2-year postgraduate Management program focused leadership and business skills.
+        software development, and IT fundamentals.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>📚 Duration</h3>
+            <p>2 Years (4 Semesters)</p>
+        </div>
+
+        <div class="card">
+            <h3>🎯 Eligibility</h3>
+            <p>graduate(any) stream)</p>
+        </div>
+
+        <div class="card">
+            <h3> Subjects</h3>
+            <p>finance marketing hr</p>
+        </div>
+
+        <div class="card">
+            <h3>💼 Career</h3>
+            <p>manager consultant</p>
+        </div>
+
+    </div>
+
+    <br>
+<B>
+    <button onclick="alert('Application Form Coming Soon')">
+        Apply for MBA
+</B>
+    </button>
+<!-- MCA DETAILS SECTION -->
+<div class="section" id="MCA">
+    <h2>master of computer applictions (MCA)</h2>
+
+    <p>
+        MCA is a postgraduate course focusing on advanced comupter applications and software development.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>📚 Duration</h3>
+            <p>2 Years (4 Semesters)</p>
+        </div>
+
+        <div class="card">
+            <h3>🎯 Eligibility</h3>
+            <p>graduate(BCA BSC IT)</p>
+        </div>
+
+        <div class="card">
+            <h3>💻 Subjects</h3>
+            <p>AI data science programming</p>
+        </div>
+
+        <div class="card">
+            <h3>💼 Career</h3>
+            <p>Software engineer analyst </p>
+        </div>
+
+    </div>
+
+    <br>
+<B>
+    <button onclick="alert('Application Form Coming Soon')">
+        Apply for MCA
+</B>
+    </button>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>White Theme Admission Enquiry</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Page background */
+body {
+    background: #f5f5f5;
+}
+
+/* Footer */
+.footer {
+    background: #ffffff;
+    color: #333;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+}
+
+/* Container */
+.footer-container {
+    max-width: 400px;
+    margin: auto;
+    animation: slideUp 1s ease;
+}
+
+/* Heading */
+.footer h2 {
+    margin-bottom: 20px;
+    color: #111;
+}
+
+/* Inputs */
+.footer form input,
+.footer form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fafafa;
+    transition: 0.3s;
+}
+
+/* Input focus */
+.footer form input:focus,
+.footer form select:focus {
+    outline: none;
+    border-color: #ff4d4d;
+    box-shadow: 0 0 8px rgba(255,77,77,0.3);
+    transform: scale(1.03);
+}
+
+/* Button */
+.footer form button {
+    width: 100%;
+    padding: 12px;
+    background: #ff4d4d;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+/* Hover */
+.footer form button:hover {
+    background: #741a1a;
+    transform: scale(1.05);
+}
+
+/* Click */
+.footer form button:active {
+    transform: scale(0.95);
+}
+
+/* Shine effect */
+.footer form button::after {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    top: -100%;
+    left: -100%;
+    background: rgba(255,255,255,0.4);
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+.footer form button:hover::after {
+    top: 100%;
+    left: 100%;
+}
+
+/* Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer text */
+.copy {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+</style>
+
+</head>
+<body>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <h2>Admission Form</h2>
+
+        <form>
+            <b>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="tel"placeholder="Cet Marks" required>
+            <input type="tel"placeholder="12TH Marks"required>
+            <input type="tel"placeholder="10TH Marks"required>
+            </form>
+    
+            <select required>
+                <option value="">Select Course</option>
+                <option>BCA</option>
+                <option>BBA</option>
+                <option>MCA</option>
+                <option>MBA</option>
+            </select>
+
+            <button type="submit">Apply Now</button>
+        </form>
+
+    </div>
+<b>
+    <div class="notice">
+        <marquee behavior="scroll direction="left">
+        2026 Your College | All Rights Reserved Admissions</p>
+        </b>
+        </div>
+        </marquee>
+</footer>
+
+</body>
+</html>
+<!-- FOOTER -->
+<footer>
+    © 2026 IBMRD College | Designed by RUSHI DHERE
+<P>Address: Midc Area, Vilad Ghat,<br>
+Ahmednagar,Maharashtra-414111,India</p>
+</footer>
+<p>phone:+91 9876543210</p>
+<p>emill:info@ibmrd.edu.in</p>
+
+</body>
+</html>
